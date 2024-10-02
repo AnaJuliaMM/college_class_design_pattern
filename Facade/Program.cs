@@ -6,9 +6,10 @@
         TV tv = new TV();
         SoundSystem soundSystem = new SoundSystem();
         DVDPlayer dvdPlayer = new DVDPlayer();
+        Subwoofer subwoofer = new Subwoofer();
 
         // Criando a facade que encapsula os componentes
-        HomeTheaterFacade homeTheater = new HomeTheaterFacade(tv, soundSystem, dvdPlayer);
+        HomeTheaterFacade homeTheater = new HomeTheaterFacade(tv, soundSystem, dvdPlayer, subwoofer);
 
         // Assistir a um filme através da facade
         homeTheater.WatchMovie("O Senhor dos Anéis");
