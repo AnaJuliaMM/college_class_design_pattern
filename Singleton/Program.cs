@@ -11,3 +11,13 @@ if (singletonInstance == anotherInstance)
 {
     Console.WriteLine("Ambas as variáveis referenciam a mesma instância.");
 }
+
+// Exercise: Magic Kingdom of Eldoria and Magic Draconis Dragon
+Draconis fistMagicDragonCall = Draconis.Instance;
+Draconis secondMagicDragonCall = Draconis.Instance;
+
+if (fistMagicDragonCall == secondMagicDragonCall) {
+    fistMagicDragonCall.ShowMessage();
+    Console.WriteLine("There is only one Draconis!");
+}
+    
